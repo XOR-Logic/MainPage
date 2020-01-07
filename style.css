@@ -1,0 +1,254 @@
+body{
+  margin: 0px;
+    font-family: Arial;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 450px 8fr 30px;
+}
+
+.zone {
+  /* padding:30px 50px; */
+  /* margin:40px 60px; */
+  cursor:pointer;
+  display:block;
+  color:#FFF;
+  font-size:1.1em;
+  /* border-radius:4px; */
+  border:1px solid #bbb;
+  transition: all 0.3s linear;
+}
+
+
+.contact{
+  text-align: right;
+}
+
+.redPos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redImg{
+  width: auto;
+  height: 100%;
+}
+
+.imgInShadow:hover{
+  box-shadow: inset 0px 0px 100px 100px rgba(0,0,0,0.9);
+}
+
+.yellow{
+  text-align: center;
+  padding-top: 5px;
+}
+
+.isiHead{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(70px,130px)) minmax(200px,3fr) minmax(5px,20px);
+  text-align:center;
+  padding-top: 10px;
+}
+
+.sticky{
+  position: fixed;
+  margin-top: 0px;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+}
+
+
+.isiBlueCon{
+  display: grid;
+  grid-gap: 50px;
+  margin: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(260px,auto));
+  grid-template-rows:repeat(auto-fill,370px) ;
+  grid-auto-rows: 370px;
+}
+
+.isiBlueIsi{
+  border: 2px solid black;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 1px grey;
+  background: rgba(0, 0, 0, 0.78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one{
+  background: url("img/files_2.png");
+  width: 25%;
+  height: 25%;
+  max-width: 50%;
+  min-width: 10%;
+  max-height: 50%;
+  min-height: 10%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.two{
+  background: url("img/server_2_2.png");
+  width: 35%;
+  height: 35%;
+  max-width: 50%;
+  min-width: 15%;
+  max-height: 50%;
+  min-height: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.three{
+  background: url("img/monitor_settings_2.png");
+  width: 25%;
+  height: 25%;
+  max-width: 50%;
+  min-width: 10%;
+  max-height: 50%;
+  min-height: 10%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.four{
+  background: url("img/server_3.png");
+  width: 35%;
+  height: 35%;
+  max-width: 50%;
+  min-width: 15%;
+  max-height: 50%;
+  min-height: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.five{
+  background: url("img/data_storage_2_2.png");
+  width: 35%;
+  height: 35%;
+  max-width: 50%;
+  min-width: 15%;
+  max-height: 50%;
+  min-height: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.six{
+  background: url("img/monitor_coding_2.png");
+  width: 30%;
+  height: 30%;
+  max-width: 50%;
+  min-width: 15%;
+  max-height: 50%;
+  min-height: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.seven{
+  background: url("img/desktop_analytics_2.png");
+  width: 35%;
+  height: 35%;
+  max-width: 50%;
+  min-width: 15%;
+  max-height: 50%;
+  min-height: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.eight{
+  background: url("img/server_safe_2.png");
+  width: 35%;
+  height: 35%;
+  max-width: 50%;
+  min-width: 15%;
+  max-height: 50%;
+  min-height: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+@media screen and (max-width:600px) {
+    div.isiHead{
+      font-size: 0.7em;
+    }
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.box{
+  transition:  transform 0.4s;
+}
+
+.box:hover {
+    -webkit-transform:rotate(-7deg);
+    box-transform:rotate(-7deg);
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
